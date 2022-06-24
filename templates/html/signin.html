@@ -1,0 +1,31 @@
+{#{% extends 'html/index.html' %}#}
+{##}
+{##}
+{#{% block content %}#}
+{##}
+{#<!-- /*SIGN IN FORM*/ -->#}
+{#<form class="col-12 col-sm-6 col-md-4" action="/signin" name="signin" method="POST">#}
+{#    {% csrf_token %}#}
+{#    <div class="mb-3">#}
+{#        <label for="email_" class="form-label fw-bold">Email</label>#}
+{#        <input type="email" class="form-control" id="email_" name="email_" value="{{values.email}}" >#}
+{#        <span id="error_message" class="error"></span>#}
+{#        <span id="emailSuccess1" class="success"></span>#}
+{#    </div>#}
+{#    <div class="mb-3">#}
+{#        <label for="password_" class="form-label fw-bold">Password</label>#}
+{#        <input type="password" class="form-control" id="password_" name="password_">#}
+{#        <span id="error_message" class="error"></span>#}
+{#        <span id="passwordSuccess1" class="success"></span>#}
+{#    </div>#}
+{##}
+{#    <button type="submit" class="btn btn-warning fw-bold w-100 mt-3" name="signIn">SIGN IN</button>#}
+{#</form>#}
+{##}
+{#{% endblock %}#}
+
+{% extends 'html/base.html' %}
+
+{% block content %}
+    <div>WELCOME</div>
+{% endblock %}
